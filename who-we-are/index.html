@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onederz - Who We Are</title>
+    <link rel="icon" type="image/png" href="../../mobile-image/logo.webp">
+    <link rel="stylesheet" href="../../who-we-are/who-we-are.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg"></div>
+
+    <nav class="mobile-navigation">
+        <div class="mobile-nav-container">
+            <div class="mobile-logo">
+                <a href="../index.html">
+                    <img src="../../mobile-image/onederzlogo.webp" alt="Onederz Logo" width="100px">
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="mobile-nav-menu" id="mobileNavMenu">
+            <div class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </div>
+            
+            <ul>
+                <li class="mobile-nav-item">
+                    <a href="../index.html" class="mobile-nav-link">
+                        <i class="fas fa-home"></i>Home
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#" class="mobile-nav-link" id="destinationLink">
+                        <i class="fas fa-map-marker-alt"></i>Destinations
+                    </a>
+                    <span class="dropdown-toggle" id="destinationsToggle">
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                    <ul class="mobile-dropdown-menu" id="destinationsDropdown">
+                        <div class="country-title">Cambodia</div>
+                        <li class="mobile-dropdown-item"><a href="../../siem-reap/index.html" class="mobile-dropdown-link">Siem Reap</a></li>
+                        <li class="mobile-dropdown-item"><a href="../../phnom-penh/index.html" class="mobile-dropdown-link">Phnom Penh</a></li>
+                        <li class="mobile-dropdown-item"><a href="../../kampot/index.html" class="mobile-dropdown-link">Kampot</a></li>
+                        <li class="mobile-dropdown-item"><a href="../../sihanoukville/index.html" class="mobile-dropdown-link">Sihanoukville</a></li>
+                        <li class="mobile-dropdown-item"><a href="../../koh-rong-sanloem/index.html" class="mobile-dropdown-link">Koh Rong Sanloem</a></li>
+                        <li class="mobile-dropdown-item"><a href="../../koh-rong/index.html" class="mobile-dropdown-link">Koh Rong</a></li>
+                        
+                        <div class="country-title">Thailand</div>
+                        <li class="mobile-dropdown-item"><a href="bangkok/index.html" class="mobile-dropdown-link">Bangkok</a></li>
+                    </ul>
+                </li>
+                
+                <li class="mobile-nav-item">
+                    <a class="mobile-nav-link contact-trigger"> <!-- Changed to class -->
+                        <i class="fas fa-envelope"></i>Contact
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="mobile-nav-actions">
+                <div class="mobile-social-icons">
+                    <a href="https://web.facebook.com/onederz" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/onederzhostels" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <button class="mobile-book-now-btn book-now-trigger" id="mobileBookBtn">Book Now</button>
+            </div>
+        </div>
+        
+        <div class="overlay" id="overlay"></div>
+    </nav>
+
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-navigation">
+        <div class="desktop-nav-container">
+            <div class="desktop-logo">
+                <a href="../index.html">
+                    <div id="logo">
+                        <div class="logo"></div>
+                    </div>
+                </a>
+            </div>
+            
+            <ul class="desktop-nav-menu">
+                <li class="desktop-nav-item">
+                    <a href="../index.html" class="desktop-nav-link">
+                        <i class="fas fa-home"></i>Home
+                    </a>
+                </li>
+                <li class="desktop-nav-item">
+                    <a class="desktop-nav-link">
+                        <i class="fas fa-map-marker-alt"></i>Destinations
+                    </a>
+                    <ul class="desktop-dropdown-menu">
+                        <div class="dropdown-columns">
+                            <div class="dropdown-column">
+                                <div class="dropdown-headerss">
+                                    <i class="fas fa-landmark"></i> Cambodia
+                                </div>
+                                <li class="desktop-dropdown-item">
+                                    <a href="../../siem-reap/index.html" class="desktop-dropdown-link">
+                                        <i class="fas fa-angle-right"></i>Siem Reap
+                                    </a>
+                                </li>
+                                <li class="desktop-dropdown-item">
+                                    <a href="../../phnom-penh/index.html" class="desktop-dropdown-link">
+                                        <i class="fas fa-angle-right"></i>Phnom Penh
+                                    </a>
+                                </li>
+                                <li class="desktop-dropdown-item">
+                                    <a href="../../kampot/index.html" class="desktop-dropdown-link">
+                                        <i class="fas fa-angle-right"></i>Kampot
+                                    </a>
+                                </li>
+                                <li class="desktop-dropdown-item">
+                                    <a href="../../sihanoukville/index.html" class="desktop-dropdown-link">
+                                        <i class="fas fa-angle-right"></i>Sihanoukville
+                                    </a>
+                                </li>
+                                <li class="desktop-dropdown-item">
+                                    <a href="../../koh-rong-sanloem/index.html" class="desktop-dropdown-link">
+                                        <i class="fas fa-angle-right"></i>Koh Rong Sanloem
+                                    </a>
+                                </li>
+                                <li class="desktop-dropdown-item">
+                                    <a href="../../koh-rong/index.html" class="desktop-dropdown-link">
+                                        <i class="fas fa-angle-right"></i>Koh Rong
+                                    </a>
+                                </li>
+                            </div>
+                            
+                            <div class="dropdown-column">
+                                <div class="dropdown-headerss">
+                                    <i class="fas fa-landmark"></i> Thailand
+                                </div>
+                                <li class="desktop-dropdown-item" style="pointer-events: none;">
+                                    <a href="../../bangkok/index.html" class="desktop-dropdown-link">
+                                        <i class="fas fa-angle-right"></i>Bangkok (Coming soon)
+                                    </a>
+                                </li>
+                                
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                
+                <li class="desktop-nav-item">
+                    <a class="desktop-nav-link contact-trigger"> <!-- Changed to class -->
+                        <i class="fas fa-envelope"></i>Contact
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="desktop-nav-actions">
+                <div class="desktop-social-icons">
+                    <a href="https://web.facebook.com/onederz" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/onederzhostels" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <button class="desktop-book-now-btn book-now-trigger" id="mobileBookBtn">Book Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modern Contact Popup -->
+    <div class="contact-popup" id="contactPopup">
+        <div class="contact-container">
+            <button class="contact-close" id="closeContact">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="contact-sidebar">
+                <h2 class="contact-title">Connect With Us</h2>
+                <p class="contact-subtitle">We're here to help you plan your perfect stay. Reach out to our team at any of our locations.</p>
+                
+                <div class="contact-info-sidebar">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>LOCATIONS</h4>
+                            <p>Cambodia & Thailand</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-content">
+                
+                <div class="contact-locations">
+                    <div class="country-separator cambodia">Cambodia</div>
+                    
+                    <!-- Siem Reap -->
+                    <div class="location-accordion">
+                        <div class="location-header">
+                            <h3>Siem Reap</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="location-content">
+                            <div class="contact-details">
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-phone"></i>Phone</h4>
+                                    <a href="tel:+855972117100">+855 97 211 7100</a>
+                                    <a href="tel:+85563963525">+855 63 963 525</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-envelope"></i>Email</h4>
+                                    <a href="mailto:onederzsiemreap@gmail.com">onederzsiemreap@gmail.com</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-map-marker-alt"></i>Address</h4>
+                                    <a href="https://maps.app.goo.gl/Ysw5UTW32Ms8zK8A8" target="_blank">Next to Angkor Night Market, Angkor Night Market Street, Siem Reap, Cambodia</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-share-alt"></i>Social</h4>
+                                    <div class="social-links">
+                                        <a href="https://wa.me/855972117100" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="https://t.me/onederzhostels" aria-label="Chat on Telegram"><i class="fab fa-telegram"></i></a>
+                                        <a href="https://m.me/onederz" aria-label="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+                                        <a href="https://web.facebook.com/onederz" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Phnom Penh -->
+                    <div class="location-accordion">
+                        <div class="location-header">
+                            <h3>Phnom Penh</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="location-content">
+                            <div class="contact-details">
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-phone"></i>Phone</h4>
+                                    <a href="tel:+85586911284">+855 86 911 284</a>
+                                    <a href="tel:+85523982822">+855 23 982 822</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-envelope"></i>Email</h4>
+                                    <a href="mailto:onederzpp@gmail.com">onederzpp@gmail.com</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-map-marker-alt"></i>Address</h4>
+                                    <a href="https://maps.app.goo.gl/fvHybK1bS55LTVNf6" target="_blank">No 12-14, St 110, Psar Kandal 1, Daun Penh, Phnom Penh, Cambodia</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-share-alt"></i>Social</h4>
+                                    <div class="social-links">
+                                        <a href="https://wa.me/85586911284" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="https://t.me/onederzhostel" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                                        <a href="https://m.me/onederzpp" aria-label="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+                                        <a href="https://web.facebook.com/onederzpp" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Kampot -->
+                    <div class="location-accordion">
+                        <div class="location-header">
+                            <h3>Kampot</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="location-content">
+                            <div class="contact-details">
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-phone"></i>Phone</h4>
+                                    <a href="tel:+85598309551">+855 98 309 551</a>
+                                    <a href="tel:+855977438468">+855 97 743 8468</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-envelope"></i>Email</h4>
+                                    <a href="mailto:onederzkampot@gmail.com">onederzkampot@gmail.com</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-map-marker-alt"></i>Address</h4>
+                                    <a href="https://maps.app.goo.gl/4sHEXgS93SxxkaBB8" target="_blank">Muoy Ouh Saphea Village, Sangkat Kampong Kandal, Kampot, Cambodia</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-share-alt"></i>Social</h4>
+                                    <div class="social-links">
+                                        <a href="https://wa.me/855977438468" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="https://t.me/onederzkampot" aria-label="Chat on Telegram"><i class="fab fa-telegram"></i></a>
+                                        <a href="https://m.me/onederzkampot" aria-label="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+                                        <a href="https://web.facebook.com/onederzkampot" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sihanoukville -->
+                    <div class="location-accordion">
+                        <div class="location-header">
+                            <h3>Sihanoukville</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="location-content">
+                            <div class="contact-details">
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-phone"></i>Phone</h4>
+                                    <a href="tel:+855963390005">+855 96 339 0005</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-envelope"></i>Email</h4>
+                                    <a href="mailto:onederzshv@gmail.com">onederzshv@gmail.com</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-map-marker-alt"></i>Address</h4>
+                                    <a href="https://maps.app.goo.gl/Gi9NJoFc5hFSTeNW8" target="_blank">Village 3, Preah Sihanouk 180403, Cambodia</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-share-alt"></i>Social</h4>
+                                    <div class="social-links">
+                                        <a href="https://wa.me/855963390005" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="https://t.me/onederz_shv" aria-label="Chat on Telegram"><i class="fab fa-telegram"></i></a>
+                                        <a href="https://m.me/onederzshv" aria-label="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+                                        <a href="https://web.facebook.com/onederzshv" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Koh Rong Sanloem -->
+                    <div class="location-accordion">
+                        <div class="location-header">
+                            <h3>Koh Rong Sanloem</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="location-content">
+                            <div class="contact-details">
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-phone"></i>Phone</h4>
+                                    <a href="tel:+85590200400">+855 90 200 400</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-envelope"></i>Email</h4>
+                                    <a href="mailto:onederzkohrongsanloem@gmail.com">onederzkohrongsanloem@gmail.com</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-map-marker-alt"></i>Address</h4>
+                                    <a href="https://maps.app.goo.gl/3TW9oUf97Mhnhiju7" target="_blank">Saracen beach, Koh Rong Sanloem, Cambodia</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-share-alt"></i>Social</h4>
+                                    <div class="social-links">
+                                        <a href="https://wa.me/85590200400" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="https://t.me/+85590200400" aria-label="Chat on Telegram"><i class="fab fa-telegram"></i></a>
+                                        <a href="https://m.me/onederzkrs" aria-label="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+                                        <a href="https://web.facebook.com/onederzkrs" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Koh Rong -->
+                    <div class="location-accordion">
+                        <div class="location-header">
+                            <h3>Koh Rong</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="location-content">
+                            <div class="contact-details">
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-phone"></i>Phone</h4>
+                                    <a href="tel:+855762200400">+855 76 220 0400</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-envelope"></i>Email</h4>
+                                    <a href="mailto:onederzkohrong@gmail.com">onederzkohrong@gmail.com</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-map-marker-alt"></i>Address</h4>
+                                    <a href="https://maps.app.goo.gl/3vgQvTGKLtjJ8JZF9"  target="_blank">Koh Rong, Long Set Beach, 090501, Cambodia</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-share-alt"></i>Social</h4>
+                                    <div class="social-links">
+                                        <a href="https://wa.me/855762200400" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="https://t.me/+855762200400" aria-label="Chat on Telegram"><i class="fab fa-telegram"></i></a>
+                                        <a href="https://m.me/404596502743167" aria-label="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+                                        <a href="https://web.facebook.com/profile.php?id=61565414620556" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="country-separator">Thailand</div>
+                    
+                    <!-- Bangkok -->
+                    <div class="location-accordion">
+                        <div class="location-header">
+                            <h3>Bangkok</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="location-content">
+                            <div class="contact-details">
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-phone"></i>Phone</h4>
+                                    <a href="tel:+6622345678">+66 2 234 5678</a>
+                                    <a href="tel:+66891234567">+66 89 123 4567</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-envelope"></i>Email</h4>
+                                    <a href="mailto:onederzbangkok@gmail.com">onederzbangkok@gmail.com</a>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-map-marker-alt"></i>Address</h4>
+                                    <p>123 Sukhumvit Road, Bangkok 10110, Thailand</p>
+                                </div>
+                                <div class="contact-method">
+                                    <h4><i class="fas fa-share-alt"></i>Social</h4>
+                                    <div class="social-links">
+                                        <a href="https://wa.me/66891234567" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="https://t.me/onederzbangkok" aria-label="Chat on Telegram"><i class="fab fa-telegram"></i></a>
+                                        <a href="https://m.me/onederzbangkok" aria-label="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+                                        <a href="https://web.facebook.com/onederzbangkok" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Who We Are</h1>
+            <p>Creating wonderful travel memories through exceptional Onederz experiences</p>
+        </div>
+    </section>
+
+    <!-- Scroll down button -->
+    <div class="scroll-down">
+        <i class="fa-solid fa-angles-down"></i>
+    </div>
+
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="section-container">
+            <div class="section-title">
+                <h2>Our Philosophy</h2>
+            </div>
+            
+            <!-- Card 1 -->
+            <div class="about-card" id="philosophy-card">
+                <div class="about-image">
+                    <img src="../who-we-are/who-img/goodaccomodate.webp" alt="Onederz common area">
+                </div>
+                <div class="about-text">
+                    <h3>Good accommodation for everyone</h3>
+                    <p>"Saving accommodation cost" and "meeting people from all over the world" would be the reasons you stay at social hotel. However, in exchange for these advantages, you might have bad experience such as sleeping in a harsh environment or taking shower in a dirty bathroom. These problems may affect your trip memory.</p>
+                    <p>Although Onederz is NOT party hotel, we are trying to solve these problems so that everybody can enjoy staying at social hotel. Through providing good accommodation with good price, we will help you to have a wonderful trip memory in Cambodia.</p>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="about-card" id="rooms-card">
+                <div class="about-image">
+                    <img src="../who-we-are/who-img/room.webp" alt="Onederz dorm room">
+                </div>
+                <div class="about-text">
+                    <h3>Our rooms / dorms</h3>
+                    <p>To provide the best sleeping environment is the most important role for us.</p>
+                    <p>We have everything you need in a dorm room such as well maintained airconditioner, fast Wifi, large locker and padlock, strong and big enough bed frame, comfortable mattress and blanket, personal electric socket and reading lamps and daily housekeeping...</p>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="about-card" id="services-card">
+                <div class="about-image">
+                    <img src="../who-we-are/who-img/ourservice.webp" alt="Onederz staff">
+                </div>
+                <div class="about-text">
+                    <h3>Our services</h3>
+                    <p>Although all of our members are working as "one team" to help you to have a good memory both inside and outside the Onederz, you will find that the way each member serve you is not the same. This is because we respect a character and a difference of each member and we also let every member show his or her own hospitality instead of letting everyone work as prescribed in the manual.</p>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="about-card" id="facilities-card">
+                <div class="about-image">
+                    <img src="../who-we-are/who-img/bathroom.webp" alt="Onederz facilities">
+                </div>
+                <div class="about-text">
+                    <h3>Our facilities</h3>
+                    <p>In Onederz, many guests share its facilities. So we design facilities in a social hotel based on this aspect. For example, we believe that "Shared bathrooms should be outside guest rooms so that noise from shared bathrooms will not disturb guests who are sleeping".</p>
+                    <p>We also have our own maintainance team and we check and maintain the condition of facilities everyday.</p>
+                </div>
+            </div>
+            
+            <!-- Card 5 -->
+            <div class="about-card" id="rules-card">
+                <div class="about-image">
+                    <img src="../who-we-are/who-img/ourrule.webp" alt="Onederz rules">
+                </div>
+                <div class="about-text">
+                    <h3>Our rules</h3>
+                    <p>Since many guests live together in a social hotel, we have to ask all the guests to respect and follow our simple rules so that everyone can enjoy pleasant environment. For example, guests are not allowed to talk or make a noise in the guest room or the space around the guest room after 10pm. This is to provide good sleeping environment to everyone. Ofcourse, you can enjoy talking in our common space (lounge) 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history-section">
+        <div class="section-container">
+            <div class="section-title">
+                <h2>Our Journey</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p>One Stop started its journey in Phnom Penh, the capital city of Cambodia, in August 2013.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p>One Stop Siem Reap opened in January 2014 near Pub Street.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p>One Stop Sihanoukville (changed to Onederz Sihanoukville), our first hostel with swimming pool in beach resort, opened in November 2014.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p>Onederz opened in Siem Reap with roof top swimming pool in 2016 near Angkor Night Market.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p>Onederz Phnom Penh opened in 2017 in riverside area.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p>Onederz Siem Reap won 2 awards (Hoscar) "The best hostel in Cambodia" and "8th best large hostel in the world" from HostelWorld in 2017.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p>One Stop Siem Reap won an award (Hoscar) "The best hostel in Cambodia" from HostelWorld in 2018.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p>Onederz Koh Rong Sanloem opened in 2018.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p>Onederz Siem Reap won an awards (Hoscar) "7th best large hostel in the world" from HostelWorld in 2019.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="booking-popup-container" id="bookingPopupContainer">
+    <button class="back-button" id="mobileBackBtn"></button>
+    <div class="booking-content">
+        <div class="booking-form-mobile">
+            <div class="booking-form-header">
+                <div>
+                <h3>Book Your Stay</h3>
+                <p>The best rate guaranteed!! </p>
+                <p>Book directly with us and get the best price now!</p>
+                </div>
+            </div>
+            
+            <form class="search-form" id="searchFormMobile">
+                <div class="form-group">
+                    <div class="custom-dropdown custom-dropdown-mobile">
+                        <div class="dropdown-header">
+                            <span class="selected-text">Select a destination</span>
+                            <span class="dropdown-arrow"></span>
+                        </div>
+                        <ul class="dropdown-options">
+                            <div>Cambodia</div>
+                            <li data-value="siem-reap">Siem Reap</li>
+                            <li data-value="phnom-penh">Phnom Penh</li>
+                            <li data-value="kampot">Kampot</li>
+                            <li data-value="sihanoukville">Sihanoukville</li>
+                            <li data-value="koh-rong-sanloem">Koh Rong Sanloem</li>
+                            <li data-value="koh-rong">Koh Rong</li>
+                            <div>Thailand</div>
+                            <li data-value="bangkok" style="pointer-events: none;">Bangkok (Coming soon)</li>
+                        </ul>
+                        <input type="hidden" id="destination-mobile" name="destination" required>
+                    </div>
+                </div>
+                <div class="date-search">
+                    <div class="form-group form-date">
+                        <input type="text" id="checkin-checkout-mobile" class="date-input" placeholder="Check-in | Check-out" readonly>
+                        <div class="calendar-container" id="calendarContainerMobile">
+                            <div class="month-year-selector" style="display: none;">
+                                <select class="month-select">
+                                    <option value="0">January</option>
+                                    <option value="1">February</option>
+                                    <option value="2">March</option>
+                                    <option value="3">April</option>
+                                    <option value="4">May</option>
+                                    <option value="5">June</option>
+                                    <option value="6">July</option>
+                                    <option value="7">August</option>
+                                    <option value="8">September</option>
+                                    <option value="9">October</option>
+                                    <option value="10">November</option>
+                                    <option value="11">December</option>
+                                </select>
+                                <select class="year-select"></select>
+                                <button class="confirm-month-year">OK</button>
+                            </div>
+                            <div class="calendar-nav">
+                                <button type="button" id="prev-month-mobile" disabled><i class="fas fa-chevron-left"></i></button>
+                                <button type="button" id="next-month-mobile"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                            <div class="calendar-wrapper">
+                                <div class="calendar" id="calendar-current-mobile">
+                                    <div class="calendar-header">
+                                        <div class="calendar-title calendar-first-month" id="current-month-title-mobile">June 2023</div>
+                                    </div>
+                                    <div class="calendar-grid" id="calendar-days-header-mobile">
+                                        <div class="calendar-day-header">Sun</div>
+                                        <div class="calendar-day-header">Mon</div>
+                                        <div class="calendar-day-header">Tue</div>
+                                        <div class="calendar-day-header">Wed</div>
+                                        <div class="calendar-day-header">Thu</div>
+                                        <div class="calendar-day-header">Fri</div>
+                                        <div class="calendar-day-header">Sat</div>
+                                    </div>
+                                    <div class="calendar-grid" id="calendar-current-days-mobile"></div>
+                                </div>
+                                <div class="calendar" id="calendar-next-mobile">
+                                    <div class="calendar-header">
+                                        <div class="calendar-title" id="next-month-title-mobile">July 2023</div>
+                                    </div>
+                                    <div class="calendar-grid" id="calendar-days-header-mobile">
+                                        <div class="calendar-day-header">Sun</div>
+                                        <div class="calendar-day-header">Mon</div>
+                                        <div class="calendar-day-header">Tue</div>
+                                        <div class="calendar-day-header">Wed</div>
+                                        <div class="calendar-day-header">Thu</div>
+                                        <div class="calendar-day-header">Fri</div>
+                                        <div class="calendar-day-header">Sat</div>
+                                    </div>
+                                    <div class="calendar-grid" id="calendar-next-days-mobile"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group form-btn">
+                        <button type="submit" id="submitBtnMobile"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="hotel-info">
+            <div class="hotel-image">
+                <img id="hotel-image" src="../mobile-image/go-to-siemreap-square.webp" alt="Onederz Siem Reap">
+            </div>
+            
+            <div class="hotel-details">
+    <h2 id="hotel-name">Onederz Siem Reap</h2>
+    <p id="hotel-description">Awarded as the '2nd best large hostel in the world' by HostelWorld, our Siem Reap hostel is just a 4-minute walk from Pub Street. We offer three swimming pools, a cozy cafe and bar, and a large common area to meet fellow travelers.</p>
+    
+    <ul id="hotel-features" class="hotel-features">
+        <li><i class="fas fa-wifi"></i> Free High-Speed WiFi</li>
+        <li><i class="fas fa-swimming-pool"></i> 4 Swimming Pools (including a rooftop pool)</li>
+        <li><i class="fas fa-utensils"></i> Restaurant & Bar</li>
+        <li><i class="fas fa-car"></i> Tour & Travel Desk</li>
+        <li><i class="fas fa-walking"></i> 4-minute walk to Pub Street</li>
+    </ul>
+</div>
+            
+            <div class="desktop-book-btn">
+                Check Availability & Book Now
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="bookingOverlay" class="booking-overlay"></div>
+
+    
+<script src="../../js/booking.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const hamburger = document.getElementById('hamburger');
+            const mobileNavMenu = document.getElementById('mobileNavMenu');
+            const closeMenu = document.getElementById('closeMenu');
+            const overlay = document.getElementById('overlay');
+            const destinationsToggle = document.getElementById('destinationsToggle');
+            const destinationLink = document.getElementById('destinationLink');
+            const destinationsDropdown = document.getElementById('destinationsDropdown');
+            const body = document.body;
+            
+            // Store scroll position before opening menu
+            let scrollPosition = 0;
+
+            // Modify your hamburger click event
+            hamburger.addEventListener('click', function() {
+                if (!mobileNavMenu.classList.contains('active')) {
+                    // Store current scroll position
+                    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+                    
+                    mobileNavMenu.classList.add('active');
+                    overlay.classList.add('active');
+                    hamburger.classList.add('active');
+                    body.classList.add('no-scrolls');
+                    
+                    // Apply the scroll position to prevent jump
+                    body.style.top = `-${scrollPosition}px`;
+                } else {
+                    closeMobileMenu();
+                }
+            });
+
+            // Update your closeMobileMenu function
+            function closeMobileMenu() {
+                mobileNavMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                hamburger.classList.remove('active');
+                body.classList.remove('no-scrolls');
+                
+                // Restore scroll position
+                body.style.top = '';
+                window.scrollTo(0, scrollPosition);
+            }
+            
+            closeMenu.addEventListener('click', closeMobileMenu);
+            overlay.addEventListener('click', closeMobileMenu);
+            
+            // Toggle destinations dropdown
+            function toggleDestinationsDropdown() {
+                destinationsDropdown.classList.toggle('active');
+                destinationsToggle.classList.toggle('active');
+            }
+            
+            destinationsToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                toggleDestinationsDropdown();
+            });
+            
+            // Make the entire destination link clickable
+            destinationLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                toggleDestinationsDropdown();
+            });
+            
+            // Close menu when clicking on links (except dropdown toggle)
+            document.querySelectorAll('.mobile-dropdown-link').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    closeMobileMenu();
+                });
+            });
+            
+            // Prevent dropdown toggle from closing the menu
+            destinationsToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+            
+            // Intersection Observer for about cards
+            const aboutCards = document.querySelectorAll('.about-card');
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const aboutObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            aboutCards.forEach(card => {
+                aboutObserver.observe(card);
+            });
+            
+            // Intersection Observer for timeline items with staggered delay
+            const timelineObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }, index * 150); // Stagger the animation
+                    }
+                });
+            }, observerOptions);
+            
+            timelineItems.forEach(item => {
+                timelineObserver.observe(item);
+            });
+            
+            // ===== NAVBAR SCROLL EFFECT =====
+            window.addEventListener("scroll", function () {
+                const nav = document.querySelector(".desktop-navigation");
+                const logo = document.querySelector("#logo");
+                const navLinks = document.querySelectorAll(".desktop-nav-link");
+
+                if (window.scrollY > 50) {
+                    nav.classList.add("scrolled");
+                    logo.classList.add("scrolled");
+                    navLinks.forEach(link => link.classList.add("scrolled"));
+                } else {
+                    nav.classList.remove("scrolled");
+                    logo.classList.remove("scrolled");
+                    navLinks.forEach(link => link.classList.remove("scrolled"));
+                }
+            });
+
+            // Scroll down button behavior
+            document.addEventListener("scroll", function () {
+                const btn = document.querySelector(".scroll-down");
+                if (window.scrollY > 100) { // hide after scrolling down a bit
+                    btn.classList.add("hidden");
+                } else {
+                    btn.classList.remove("hidden");
+                }
+            });
+
+            // Optional: make button scroll to next section
+            document.querySelector(".scroll-down").addEventListener("click", function () {
+                window.scrollTo({
+                    top: window.innerHeight, // scroll 1 viewport height
+                    behavior: "smooth"
+                });
+            });
+
+            // Background gradient on scroll
+            document.addEventListener("scroll", function () {
+                const scrollY = window.scrollY;
+                const maxScroll = 500; // how far before gradient fully appears
+                const opacity = Math.min(scrollY / maxScroll, 1); // clamp 0 → 1
+
+                document.body.style.setProperty(
+                    "--gradient",
+                    `linear-gradient(rgba(17, 17, 17, ${0.637 * opacity}), rgba(0, 0, 0, ${0.822 * opacity}))`
+                );
+
+                // apply to ::before via inline style
+                document.body.style.setProperty("--gradient-overlay", opacity);
+            });
+        });
+    </script>
+
+    <script>
+// ===== NAVBAR SCROLL EFFECT =====
+window.addEventListener("scroll", function () {
+    const nav = document.querySelector(".desktop-navigation");
+    const logo = document.querySelector("#logo");
+    const navLinks = document.querySelectorAll(".desktop-nav-link");
+
+    if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+        logo.classList.add("scrolled");
+        navLinks.forEach(link => link.classList.add("scrolled"));
+    } else {
+        nav.classList.remove("scrolled");
+        logo.classList.remove("scrolled");
+        navLinks.forEach(link => link.classList.remove("scrolled"));
+    }
+});
+
+// ===== CONTACT POPUP =====
+const contactTriggers = document.querySelectorAll(".contact-trigger");
+const contactPopup = document.getElementById("contactPopup");
+const closeContact = document.getElementById("closeContact");
+const body = document.body;
+
+// Store the current scroll position
+let scrollPosition = 0;
+
+// Add event listeners to all contact triggers
+contactTriggers.forEach(trigger => {
+    trigger.addEventListener("click", () => {
+        contactPopup.classList.add("active");
+        
+        // Prevent background scrolling
+        scrollPosition = window.pageYOffset;
+        body.style.overflow = 'hidden';
+        body.style.position = 'fixed';
+        body.style.top = `-${scrollPosition}px`;
+        body.style.width = '100%';
+    });
+});
+
+closeContact.addEventListener("click", () => {
+    contactPopup.classList.remove("active");
+    
+    // Restore background scrolling
+    body.style.removeProperty('overflow');
+    body.style.removeProperty('position');
+    body.style.removeProperty('top');
+    body.style.removeProperty('width');
+    window.scrollTo(0, scrollPosition);
+});
+
+// Close when clicking outside popup content
+contactPopup.addEventListener("click", (e) => {
+    if (e.target === contactPopup) {
+        contactPopup.classList.remove("active");
+        
+        // Restore background scrolling
+        body.style.removeProperty('overflow');
+        body.style.removeProperty('position');
+        body.style.removeProperty('top');
+        body.style.removeProperty('width');
+        window.scrollTo(0, scrollPosition);
+    }
+});
+
+// ===== LOCATION ACCORDION =====
+const locationHeaders = document.querySelectorAll(".location-header");
+
+locationHeaders.forEach(header => {
+    header.addEventListener("click", () => {
+        const content = header.nextElementSibling;
+        const icon = header.querySelector("i");
+
+        // Close other accordions
+        document.querySelectorAll(".location-content").forEach(c => {
+            if (c !== content) {
+                c.classList.remove("active");
+                c.previousElementSibling.classList.remove("active");
+            }
+        });
+
+        // Toggle current accordion
+        content.classList.toggle("active");
+        header.classList.toggle("active");
+    });
+});
+</script>
+
+</body>
+</html>
